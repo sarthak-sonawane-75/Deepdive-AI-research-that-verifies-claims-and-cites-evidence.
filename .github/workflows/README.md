@@ -1,0 +1,1 @@
+Place the official Agent Arena 2026 workflow here as `.github/workflows/agent-arena-2026-checks.yml`, using the exact workflow file supplied by the organizers. Add `MESH_API_KEY` and `SUBMISSION_TOKEN` in GitHub repository Actions secrets.

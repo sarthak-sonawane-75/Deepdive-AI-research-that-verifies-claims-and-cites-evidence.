@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DeepDive — Research you can audit</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="topbar"><div class="brand-mark">D</div><div><strong>DeepDive</strong><span>Research you can audit</span></div><span class="pill">MESH API · REQUIRED</span></header>
+  <main class="layout">
+    <section class="intro"><p class="eyebrow">SELF-VERIFYING RESEARCH ANALYST</p><h1>Research with<br><em>receipts.</em></h1><p class="lede">Investigate a question, trace claims to evidence, and inspect what the system accepted or rejected.</p>
+      <div class="mini-flow"><span>Plan</span><b>→</b><span>Research</span><b>→</b><span>Verify</span><b>→</b><span>Report</span></div>
+    </section>
+    <section class="panel"><label for="question">What do you want to investigate?</label><textarea id="question" rows="5" placeholder="Example: What are the major risks and opportunities in the EV battery market in 2026?"></textarea>
+      <div class="controls"><label class="depth-label" for="depth">Research depth</label><select id="depth"><option value="quick">Quick</option><option value="standard" selected>Standard</option><option value="deep">Deep</option></select><button id="planBtn">Create research plan <span>↗</span></button></div>
+      <p class="hint">Milestone 1: planner + Mesh API connectivity. Full research and verification workflow is being built next.</p>
+      <div id="status" role="status" aria-live="polite"></div><pre id="output" hidden></pre>
+    </section>
+    <section class="features"><article><span>01</span><h3>Evidence first</h3><p>Claims should point to specific source passages, not just a list of links.</p></article><article><span>02</span><h3>Verification loop</h3><p>Unsupported claims are rejected; thin evidence triggers targeted research.</p></article><article><span>03</span><h3>Auditable decisions</h3><p>Inspect search steps, verdicts, contradictions and retries.</p></article></section>
+  </main>
+  <footer>Prototype · No claim is considered verified until its evidence is checked.</footer>
+  <script src="/static/app.js"></script>
+</body></html>
